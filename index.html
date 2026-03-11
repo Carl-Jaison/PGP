@@ -107,7 +107,12 @@
   }
 
   @media (max-width: 700px) {
-    .cover-logo { top: 40px; right: 28px; height: 36px; }
+    .cover-logo {
+      position: static;
+      height: 32px;
+      margin-left: auto;
+      flex-shrink: 0;
+    }
   }
 
   .masthead-seal {
@@ -695,7 +700,6 @@
     <div class="cover-grid"></div>
     <div class="cover-accent"></div>
     <div class="cover-inner">
-      <img src="Takshashila Logo White Font Horizontal.png" alt="Takshashila Institution" class="cover-logo">
       <div class="cover-masthead">
         <div class="masthead-seal">
           <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
@@ -707,6 +711,7 @@
           <span class="masthead-institution">The Takshashila Institution</span>
           <span class="masthead-sub">India's Premier Independent Public Policy School · Est. 2010</span>
         </div>
+        <img src="Takshashila Logo White Font Horizontal.png" alt="Takshashila Institution" class="cover-logo">
       </div>
 
       <div class="cover-body">
